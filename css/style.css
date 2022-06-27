@@ -1,10 +1,6 @@
-*{
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Montserrat', sans-serif;
-}
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 3.5rem;
@@ -12,7 +8,13 @@ nav{
     overflow: hidden;
     position: fixed;
     top: 0;
-    left: 0;    
+    padding-right: 12.3125rem;        
+}
+nav > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
 }
 .nav-logo, .nav-options-container{
     width: fit-content;
@@ -25,12 +27,35 @@ nav{
 
 .nav-options-container > .nav-options{
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+    display: flex;    
     align-items: center;
 }
-.nav-options > li{
-    padding: 0px .625rem;
+.nav-options > li > a{    
     font-weight: 400;
     font-size: 1.25rem;
+    font-family: 'Bebas Neue', cursive;
+    color: #2F401E;
+    margin: 0px 1.525rem;
+    cursor: pointer;
+    display: block;
+  position: relative;
+  padding: 0.2em 0;
 }
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #2F401E;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  a:hover::after,
+  a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.02em, 0);
+  }
