@@ -1,47 +1,60 @@
-nav{
+/*STYLES WHEN DEVICE RESOLUTION IS FOR DESKTOP DEVICES*/
+
+/*------------------*/
+
+/*NAV STYLE SECTION*/
+nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
+    align-items: center;    
     height: 3.5rem;
     background-color: #C3D996;
     overflow: hidden;
     position: fixed;
     top: 0;
-    padding-right: 12.3125rem;        
+    padding-right: 12.3125rem;
+    width: 100%;
 }
-nav > .container{
+
+nav>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
 }
-.nav-logo, .nav-options-container{
+
+nav>.container>.bx-menu {display: none;}
+
+.nav-logo,
+.nav-options-container {
     width: fit-content;
     height: fit-content;
 }
-.nav-logo > img{
+
+.nav-logo>img {
     max-width: 12.3125rem;
     height: auto;
 }
 
-.nav-options-container > .nav-options{
+.nav-options-container>.nav-options {
     list-style: none;
-    display: flex;    
+    display: flex;
     align-items: center;
 }
-.nav-options > li > a{    
+
+.nav-options>li>a {
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.55rem;
     font-family: 'Bebas Neue', cursive;
     color: #2F401E;
     margin: 0px 1.525rem;
     cursor: pointer;
     display: block;
-  position: relative;
-  padding: 0.2em 0;
+    position: relative;
+    padding: 0.2em 0;
 }
 
+/*Desktop nav options animation*/
 a::after {
     content: '';
     position: absolute;
@@ -52,10 +65,10 @@ a::after {
     background-color: #2F401E;
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
-  }
-  
-  a:hover::after,
-  a:focus::after {
+}
+
+a:hover::after,
+a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.02em, 0);
-  }
+}
