@@ -49,4 +49,52 @@
         margin:1.825rem 0;
         font-size: 2rem;
     }
+     /*Main Section mobile structure*/
+
+    .main{
+        position: relative;
+            top: 0rem;
+        width: 23.4375rem;
+        height: 51.9rem;
+        overflow: hidden;
+        z-index: -1;
+    }
+    .main__section{
+        width: 23.4375rem;
+        height: 44.9rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    .main__textContainer{
+        width: 20rem;
+        grid-column: x1 / x3;
+        grid-row: y0;
+    }
+    .main__img{
+        width: 26.3125rem;
+        height: 23.625rem;
+        grid-column: x1 / x3;
+        grid-row: y1;
+            right: -1.999rem;
+        background-repeat:repeat-y;
+        background-size: cover;
+            background-position-x:0rem;
+            background-position-y:0%;
+    }
+    .main__h1{
+        width: 100%;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .main__h2{
+        font-size: 1.5rem;
+        width: 100%;
+        color: #75A644;
+        text-align: center;
+    }
+    .main__p{
+        width: 100%;
+        font-size: 0.75rem;
+        text-align: center;
+    }
 }

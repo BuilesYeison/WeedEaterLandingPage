@@ -72,3 +72,57 @@ a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.02em, 0);
 }
+/*Main Section structure*/
+.main{
+	position: relative;
+		top: 0rem;
+	width: 120rem;
+	height: 62.9rem;
+	overflow: hidden;
+	z-index: -1;
+}
+.main__section{
+	position: relative;
+		top: 3rem;
+	display: grid;
+		grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr;
+		grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr;
+	background-size: cover;
+		background-color: #F9E8D4;
+		background-position: 0% 0%;	
+	width: ;
+	height: 62.9rem;
+	z-index: -1;
+}
+.main__img{
+	background-image: url(/Assets/hoja-cannabis-vista-frontal_23-2148977737 2.png);
+		background-repeat:repeat-y;
+	 	background-size:auto;
+ 			background-position-x:60rem;
+ 			background-position-y:0%;
+ 	position: absolute;
+ 	overflow:hidden;
+	width: 120rem;
+	height: 62.9rem;
+	z-index: 1;
+
+}	
+.main__textContainer{
+	grid-column: x1;
+	grid-row: y1;
+	z-index: 10;
+	width: 50rem;
+}
+.main__h1{
+ font-size: 6rem;
+ font-family: "Bebas neue";
+}
+.main__h2{
+ font-size: 1.25rem;
+ color: #75A644;
+ font-family: "Montserrat";
+}
+.main__p{
+ font-size: 1.25rem;
+ font-family: "Montserrat";
+}
