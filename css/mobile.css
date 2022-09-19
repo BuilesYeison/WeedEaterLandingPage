@@ -97,4 +97,19 @@
         font-size: 0.75rem;
         text-align: center;
     }
+
+    /*Benefits section*/
+    .benefits-content{
+        flex-direction: column;
+    }
+    .benefits-content > article{
+        width: 90%;
+    }
+    .benefits-section > .title-container{
+        padding-left: 1.625rem;   
+        height: 12vh; 
+    }
+    .benefits-content > article > .article-title{
+        font-size: 3.4rem;
+    }
 }
